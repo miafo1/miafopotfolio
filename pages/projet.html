@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects - Yvan Godi Momo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.02);
+        }
+        .project-description {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="bg-gray-50" x-data="{ 
+    activeFilter: 'all',
+    projects: [
+        {
+            title: 'Mentoscam Frontend',
+            description: 'Plateforme de Mise en Relation entre Amateurs et Professionnels 📖 Project Overview Project Title Plateforme de Mise en Relation entre Amateurs et Professionnels. A comprehensive platform connecting amateur enthusiasts with professionals in various fields.',
+            image: '../assets/image/yes.jpg',
+            tech: ['JavaScript', 'React', 'Tailwind CSS'],
+            status: 'Public',
+            link: 'https://github.com/momogodi2000/mentoscam_front',
+            features: ['User Authentication', 'Real-time Chat', 'Professional Profiles', 'Booking System']
+        },
+        {
+            title: 'Mentorcam Backend',
+            description: 'Robust backend infrastructure for the Mentorcam application, providing secure API endpoints and data management. Features include user authentication, real-time notifications, and appointment scheduling.',
+            image: '../assets/image/yes.jpg',
+            tech: ['Python', 'Django', 'PostgreSQL'],
+            status: 'Public',
+            link: 'https://github.com/momogodi2000/mentorcam_backend',
+            features: ['RESTful API', 'JWT Authentication', 'Database Management', 'File Handling']
+        },
+        {
+            title: 'Spoozy App Bertiland',
+            description: 'Advanced mobile application for fintech solutions, providing users with seamless financial management tools and real-time transaction tracking.',
+            image: '../assets/image/yes.jpg',
+            tech: ['Dart', 'Flutter'],
+            status: 'Private',
+            link: 'https://github.com/momogodi2000/Spoozy_app_bertiland',
+            features: ['Mobile Payments', 'Transaction History', 'User Analytics', 'Secure Authentication']
+        },
+        {
+            title: 'Arc en Ciel',
+            description: 'Modern web renovation platform for small business entrepreneurship, helping businesses transform their online presence with cutting-edge design and functionality.',
+            image: '../assets/image/yes.jpg',
+            tech: ['Html', 'Tailwind css'],
+            status: 'Public',
+            link: 'https://github.com/momogodi2000/arc_en_ciel',
+            features: ['Responsive Design', 'Portfolio Showcase', 'Contact Forms', 'Service Booking']
+        },
+        {
+            title: 'E-railway',
+            description: 'Comprehensive web management system for railway companies, featuring schedule management, ticket booking, and real-time tracking capabilities.',
+            image: '../assets/image/yes.jpg',
+            tech: ['Html', 'Tailwind css', 'Django'],
+            status: 'Public',
+            link: 'https://github.com/momogodi2000/E-railway',
+            features: ['Schedule Management', 'Ticket Booking', 'Real-time Tracking', 'Admin Dashboard']
+        },
+        {
+            title: 'E-commerce',
+            description: 'Full-featured Django-based e-commerce platform managing products, sales, and multi-role user interactions. Includes admin controls, delivery management, and client interfaces.',
+            image: '../assets/image/yes.jpg',
+            tech: ['Html', 'Tailwind css', 'Django'],
+            status: 'Public',
+            link: 'https://github.com/momogodi2000/eshop_App',
+            features: ['Product Management', 'User Roles', 'Order Processing', 'Payment Integration']
+        }
+    ]
+}">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <a href="../index.html" class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl font-bold text-indigo-600">MGY</span>
+                    </a>
+                </div>
+                <div class="flex items-center">
+                    <a href="../index.html" class="text-gray-600 hover:text-indigo-600 px-3 py-2 text-sm font-medium">
+                        Back to Home
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 bg-gradient-to-b from-indigo-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4" data-aos="fade-up">Project Portfolio</h1>
+            <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Explore my collection of web and mobile applications, featuring modern technologies and innovative solutions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12" data-aos="fade-up">
+                <button 
+                    @click="activeFilter = 'all'" 
+                    :class="{'bg-indigo-600 text-white': activeFilter === 'all', 'bg-gray-200 text-gray-700': activeFilter !== 'all'}"
+                    class="px-4 py-2 rounded-full">
+                    All Projects
+                </button>
+                <template x-for="tech in ['JavaScript', 'Python', 'Dart', 'Html']">
+                    <button 
+                        @click="activeFilter = tech"
+                        :class="{'bg-indigo-600 text-white': activeFilter === tech, 'bg-gray-200 text-gray-700': activeFilter !== tech}"
+                        class="px-4 py-2 rounded-full"
+                        x-text="tech">
+                    </button>
+                </template>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <template x-for="(project, index) in projects" :key="index">
+                    <div 
+                        x-show="activeFilter === 'all' || project.tech.includes(activeFilter)"
+                        class="bg-white rounded-lg shadow-lg overflow-hidden hover-scale"
+                        data-aos="fade-up"
+                        :data-aos-delay="index * 100">
+                        <img :src="project.image" :alt="project.title" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-xl font-semibold text-gray-900" x-text="project.title"></h3>
+                                <span 
+                                    :class="project.status === 'Public' ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'"
+                                    class="px-3 py-1 text-sm rounded-full"
+                                    x-text="project.status">
+                                </span>
+                            </div>
+                            <p class="text-gray-600 mb-4 project-description" x-text="project.description"></p>
+                            
+                            <!-- Features List -->
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold text-gray-700 mb-2">Key Features:</h4>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <template x-for="feature in project.features">
+                                        <li class="text-sm text-gray-600" x-text="feature"></li>
+                                    </template>
+                                </ul>
+                            </div>
+                            
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <template x-for="tech in project.tech">
+                                    <span class="px-3 py-1 bg-indigo-100 text-indigo-600 rounded-full text-sm" x-text="tech"></span>
+                                </template>
+                            </div>
+                            
+                            <!-- GitHub Link Button -->
+                            <a :href="project.link" 
+                               target="_blank" 
+                               class="inline-flex items-center justify-center w-full px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors duration-300">
+                                <i class="fab fa-github mr-2"></i>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-600">Check out more of my work on 
+                <a href="https://github.com/momogodi2000" target="_blank" class="text-indigo-600 hover:text-indigo-800">
+                    GitHub
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init({
+                duration: 1000,
+                once: true
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnauld Parfait Cheussopkeng Miafo - CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+            padding: 20px;
+        }
+        
+        .cv-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+        
+        .header .title {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95em;
+        }
+        
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 0;
+        }
+        
+        .sidebar {
+            background: #f8f9fa;
+            padding: 30px;
+            border-right: 1px solid #e9ecef;
+        }
+        
+        .main-content {
+            padding: 30px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section h2 {
+            color: #2c3e50;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #3498db;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .job-title {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 1.1em;
+        }
+        
+        .company {
+            color: #3498db;
+            font-weight: 500;
+        }
+        
+        .duration {
+            color: #666;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+        
+        .location {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .responsibilities {
+            margin-top: 12px;
+        }
+        
+        .responsibilities ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .responsibilities li {
+            padding: 4px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .responsibilities li:before {
+            content: "▸";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .skills-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .skill-category {
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #e9ecef;
+        }
+        
+        .skill-category h3 {
+            color: #2c3e50;
+            font-size: 1em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        
+        .skill-tag {
+            background: #3498db;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+        
+        .languages {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .language {
+            text-align: center;
+            flex: 1;
+        }
+        
+        .language-name {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .proficiency {
+            font-size: 0.9em;
+            color: #666;
+        }
+        
+        .summary {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #27ae60;
+            margin-bottom: 25px;
+        }
+        
+        .summary p {
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+        
+        .github-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+        
+        .github-link:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .experience-header {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .cv-container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+            
+            .header {
+                background: #2c3e50 !important;
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <div class="header">
+            <h1>ARNAULD PARFAIT CHEUSSOPKENG MIAFO</h1>
+            <div class="title">Full-Stack Software Developer</div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧</span>
+                    <span>miafoarnauld@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <span>📱</span>
+                    <span>+237 671 343 867</span>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>Yaoundé, Cameroon</span>
+                </div>
+                <div class="contact-item">
+                    <span>💻</span>
+                    <span>github.com/miafo1</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="sidebar">
+                <div class="section">
+                    <h2>Technical Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Frontend Development</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">HTML5</span>
+                                <span class="skill-tag">CSS3</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Tailwind CSS</span>
+                                <span class="skill-tag">Flutter</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3>Backend Development</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">PHP</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Django</span>
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">API Integration</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3>Database & Infrastructure</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">Database Design</span>
+                                <span class="skill-tag">Network Admin</span>
+                                <span class="skill-tag">Security</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3>Project Management</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Agile</span>
+                                <span class="skill-tag">Scheduling</span>
+                                <span class="skill-tag">System Analysis</span>
+                                <span class="skill-tag">Documentation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2>Languages</h2>
+                    <div class="languages">
+                        <div class="language">
+                            <div class="language-name">French</div>
+                            <div class="proficiency">Native</div>
+                        </div>
+                        <div class="language">
+                            <div class="language-name">English</div>
+                            <div class="proficiency">Fluent</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2>Education</h2>
+                    <div class="education-item">
+                        <div class="job-title">Bachelor's Degree</div>
+                        <div class="company">Software Engineering</div>
+                        <div class="location">African Institute of Computer Sciences</div>
+                        <div class="duration">2024 | Yaoundé, Cameroon</div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="job-title">GCE Advanced Level</div>
+                        <div class="company">Geology</div>
+                        <div class="location">Government Bilingual High School</div>
+                        <div class="duration">2019 | Dschang, Cameroon</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main-content">
+                <div class="section">
+                    <h2>Professional Summary</h2>
+                    <div class="summary">
+                        <p>Experienced Full-Stack Software Developer with over 3 years of expertise in designing, developing, and deploying scalable web and mobile applications. Proven track record in delivering enterprise-level solutions for hospitality, education, transportation, and restaurant management sectors.</p>
+                        
+                        <p>Strong technical foundation in modern web technologies including React, Django, and PHP, combined with database management and API integration skills. Demonstrated ability to lead projects from analysis through deployment while maintaining high code quality and performance standards.</p>
+                        
+                        <p>Known for excellent problem-solving abilities, effective cross-functional collaboration, and commitment to delivering innovative solutions that drive business value and user satisfaction.</p>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2>Professional Experience</h2>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <div class="job-title">Full-Stack Web Developer</div>
+                                <div class="company">Univers Binaire</div>
+                                <div class="location">Yaoundé, Cameroon</div>
+                            </div>
+                            <div class="duration">2023 – 2025</div>
+                        </div>
+                        
+                        <div class="responsibilities">
+                            <ul>
+                                <li>Architected and developed 4+ enterprise-level web applications serving multiple industry sectors including hospitality (UB Hotel), education (UBSCHOOL), transportation (Business Car), and food service (UBRESTO)</li>
+                                <li>Implemented full-stack solutions using modern technologies including React for frontend, PHP/Python backends, and SQL databases</li>
+                                <li>Collaborated with cross-functional teams to analyze requirements, design system architecture, and deliver production-ready applications</li>
+                                <li>Optimized application performance and ensured scalability for high-traffic environments</li>
+                                <li>Maintained and enhanced existing applications while implementing new features based on user feedback</li>
+                                <li>Managed project timelines and coordinated with stakeholders to ensure timely delivery of milestones</li>
+                            </ul>
+                            <a href="https://www.mr.universbinaire.com" class="github-link" target="_blank">
+                                🌐 View Live Applications
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <div class="job-title">Software Development Intern</div>
+                                <div class="company">Univers Binaire</div>
+                                <div class="location">Yaoundé, Cameroon</div>
+                            </div>
+                            <div class="duration">2022 – 2023</div>
+                        </div>
+                        
+                        <div class="responsibilities">
+                            <ul>
+                                <li>Developed innovative web application for cocoa trading platform, connecting farmers with cooperatives and providing agricultural expertise</li>
+                                <li>Conducted comprehensive system analysis to identify user requirements and technical specifications</li>
+                                <li>Implemented complete software development lifecycle from planning to deployment</li>
+                                <li>Created intuitive user interfaces with responsive design principles</li>
+                                <li>Integrated third-party APIs for enhanced functionality and data management</li>
+                                <li>Delivered detailed technical documentation and project presentations to stakeholders</li>
+                            </ul>
+                            <a href="https://github.com/miafo1" class="github-link" target="_blank">
+                                💻 View Source Code
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <div class="job-title">Junior Developer Intern</div>
+                                <div class="company">Univers Binaire</div>
+                                <div class="location">Yaoundé, Cameroon</div>
+                            </div>
+                            <div class="duration">2022 – 2023</div>
+                        </div>
+                        
+                        <div class="responsibilities">
+                            <ul>
+                                <li>Built comprehensive land trading platform facilitating property transactions and surveyor connections</li>
+                                <li>Applied software engineering principles to solve real-world business challenges</li>
+                                <li>Utilized modern development methodologies including agile practices and version control</li>
+                                <li>Performed thorough testing and quality assurance to ensure application reliability</li>
+                                <li>Presented technical solutions and project outcomes to technical and non-technical audiences</li>
+                            </ul>
+                            <a href="https://github.com/miafo1" class="github-link" target="_blank">
+                                💻 View Project Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Add print functionality
+        function printCV() {
+            window.print();
+        }
+        
+        // Add print button when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.querySelector('.header');
+            const printBtn = document.createElement('button');
+            printBtn.innerHTML = '🖨️ Print/Save as PDF';
+            printBtn.style.cssText = `
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                background: rgba(255,255,255,0.2);
+                color: white;
+                border: 2px solid rgba(255,255,255,0.3);
+                padding: 10px 20px;
+                border-radius: 25px;
+                cursor: pointer;
+                font-weight: 500;
+                transition: all 0.3s ease;
+            `;
+            printBtn.addEventListener('click', printCV);
+            printBtn.addEventListener('mouseover', function() {
+                this.style.background = 'rgba(255,255,255,0.3)';
+            });
+            printBtn.addEventListener('mouseout', function() {
+                this.style.background = 'rgba(255,255,255,0.2)';
+            });
+            
+            header.style.position = 'relative';
+            header.appendChild(printBtn);
+        });
+    </script>
+</body>
+</html>
