@@ -344,27 +344,29 @@
 
 
     <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-gray-50">
+        <section id="skills" class="py-20 bg-gray-50" x-data="{
+        skills: [
+            { name: 'HTML', level: 70 },
+            { name: 'CSS', level: 70 },
+            { name: 'JavaScript', level: 60 },
+            { name: 'PHP', level: 70 },
+            { name: 'Django', level: 55 },
+            { name: 'React js', level: 50 },
+            { name: 'Tailwind CSS', level: 50 },
+            { name: 'Java', level: 50 }
+        ]
+    }">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-center text-gray-900 mb-12" data-aos="fade-up">Skills</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <template x-for="(skill, index) in [
-                    {name: 'HTML', level: 70},
-                    {name: 'CSS', level: 70},
-                    {name: 'JavaScript', level: 60},
-                    {name: 'PHP', level: 70},
-                    {name: 'Django', level: 55},
-                    {name: 'React js', level: 50},
-                    {name: 'Tailwind CSS', level: 50}
-                    {name: 'Java', level: 50}
-                ]">
+                <template x-for="(skill, index) in skills" :key="index">
                     <div class="bg-white p-6 rounded-lg shadow-md hover-scale" data-aos="fade-up" :data-aos-delay="index * 100">
                         <h3 class="text-lg font-semibold text-gray-900 mb-4" x-text="skill.name"></h3>
                         <div class="w-full bg-gray-200 rounded-full h-2.5">
-                            <div class="bg-indigo-600 h-2.5 rounded-full transition-all duration-1000"
-                                 :style="'width: ' + skill.level + '%'"
-                                 x-text="skill.level + '%'"
-                                 class="text-transparent"></div>
+                            <div class="bg-indigo-600 h-2.5 rounded-full transition-all duration-1000 text-right px-2 text-white"
+                                :style="'width: ' + skill.level + '%'">
+                                <span x-text="skill.level + '%'"></span>
+                            </div>
                         </div>
                     </div>
                 </template>
@@ -387,7 +389,7 @@
                     {
                         title: 'Cocoa Management',
                         description: 'Coco corporation management system with real-time tracking.',
-                        image: './assets/image/portfolio/2.jpg',
+                        image: './assets/image/2.jpg',
                         tech: ['PHP', 'MySQL', 'Tailwind CSS']
                     },
                     {
