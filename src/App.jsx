@@ -9,6 +9,7 @@ import Services from './components/sections/Services';
 import Projects from './components/sections/Projects';
 import Experience from './components/sections/Experience';
 import Contact from './components/sections/Contact';
+import CVPreview from './components/pages/CVPreview';
 
 const HomePage = () => (
   <Layout>
@@ -28,6 +29,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/cv-preview" element={<CVPreview />} />
       </Routes>
     </Router>
   );

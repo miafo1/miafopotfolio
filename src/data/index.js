@@ -165,3 +165,12 @@ export const experience = [
     technologies: ["PHP", "MySQL", "UML", "2TUP", "HTML", "CSS", "Tailwind", "JS"]
   }
 ];
+
+export const education = [
+  {
+    degree: "Bachelor of Technology in Software Engineering",
+    school: "University of Bamenda",
+    period: "2020 – 2024",
+    description: "Focus on software architecture, algorithms, and system design."
+  }
+];
