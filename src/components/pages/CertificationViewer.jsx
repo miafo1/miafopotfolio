@@ -8,27 +8,6 @@ const CertificationViewer = () => {
   const navigate = useNavigate();
   const cert = certifications.find(c => c.id === id);
 
-  useEffect(() => {
-    // Disable right-click
-    const handleContextMenu = (e) => {
-      e.preventDefault();
-    };
-    document.addEventListener('contextmenu', handleContextMenu);
-    
-    // Disable keyboard shortcuts for print/save (Ctrl+P, Ctrl+S)
-    const handleKeyDown = (e) => {
-      if ((e.ctrlKey || e.metaKey) && (e.key === 'p' || e.key === 's')) {
-        e.preventDefault();
-      }
-    };
-    document.addEventListener('keydown', handleKeyDown);
-
-    return () => {
-      document.removeEventListener('contextmenu', handleContextMenu);
-      document.removeEventListener('keydown', handleKeyDown);
-    };
-  }, []);
-
   if (!cert) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-slate-50">
@@ -61,11 +40,11 @@ const CertificationViewer = () => {
       </div>
 
       {/* PDF Viewer Container */}
-      <div className="flex-1 relative bg-slate-800 flex items-center justify-center p-4 md:p-8 overflow-hidden select-none">
+      <div className="flex-1 relative bg-slate-800 flex items-center justify-center p-4 md:p-8 overflow-hidden">
         
         <div className="relative w-full max-w-5xl h-full bg-white shadow-2xl rounded-lg overflow-hidden">
           <iframe 
-            src={`${cert.pdf}#toolbar=0&navpanes=0`}
+            src={cert.pdf}
             className="w-full h-full border-0"
             title={cert.name}
           />
