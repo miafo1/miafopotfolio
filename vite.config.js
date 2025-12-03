@@ -27,6 +27,15 @@ export default defineConfig({
             type: 'image/png'
           }
         ]
+      },
+      workbox: {
+        navigateFallbackDenylist: [/^\/pdfs/],
+        runtimeCaching: [
+          {
+            urlPattern: /^\/pdfs\/.*/i,
+            handler: 'NetworkOnly',
+          }
+        ]
       }
     })
   ]
