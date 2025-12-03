@@ -2,6 +2,12 @@ import { Code, Server, Database, Cloud, Shield, Terminal, Layout, Smartphone } f
 // Import the Land Management App logo from assets
 import LandMgmtLogo from '../assets/Logos/logo1.png';
 
+// Import Certification PDFs
+import AWSSolutionsArchitect from '../assets/Pdfs/AWS Certified Solutions Architect - Associate.pdf';
+import AWSSecurity from '../assets/Pdfs/AWS Certified Security - Specialty.pdf';
+import CCNA from '../assets/Pdfs/Cisco Certified Network Associate certificate.pdf';
+import SecurityPlus from '../assets/Pdfs/CompTIA Security+ ce certificate.pdf';
+
 export const personalInfo = {
   name: "CHEUSSOPKENG MIAFO ARNAULD PARFAIT",
   title: "Software Engineer | AWS Cloud Engineer",
@@ -12,6 +18,37 @@ export const personalInfo = {
   github: "https://github.com/miafo1",
   linkedin: "https://www.linkedin.com/in/miafo-arnauld-aaa7142a8",
 };
+
+export const certifications = [
+  {
+    id: "aws-sa",
+    name: "AWS Certified Solutions Architect – Associate",
+    issuer: "Amazon Web Services",
+    pdf: AWSSolutionsArchitect,
+    icon: Cloud
+  },
+  {
+    id: "aws-sec",
+    name: "AWS Certified Security – Specialty",
+    issuer: "Amazon Web Services",
+    pdf: AWSSecurity,
+    icon: Shield
+  },
+  {
+    id: "ccna",
+    name: "Cisco Certified Network Associate (CCNA)",
+    issuer: "Cisco",
+    pdf: CCNA,
+    icon: Terminal
+  },
+  {
+    id: "sec-plus",
+    name: "CompTIA Security+",
+    issuer: "CompTIA",
+    pdf: SecurityPlus,
+    icon: Shield
+  }
+];
 
 export const skills = {
   programming: [

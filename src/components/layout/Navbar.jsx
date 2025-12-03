@@ -51,6 +51,7 @@ const Navbar = () => {
           ))}
           <a 
             href={Mycv} 
+            download="CV_Miafo.pdf"
             target="_blank" 
             rel="noopener noreferrer"
             className="px-5 py-2 bg-primary text-white rounded-full font-medium hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/30"
@@ -93,6 +94,7 @@ const Navbar = () => {
               ))}
               <a 
                 href={Mycv} 
+                download="CV_Miafo.pdf"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="px-5 py-3 bg-primary text-white rounded-lg font-medium text-center hover:bg-blue-700 transition-colors"
