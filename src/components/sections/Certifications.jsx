@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
@@ -16,7 +15,13 @@ const Certifications = () => {
           {certifications.map((cert, index) => {
             const Icon = cert.icon;
             return (
-              <Link to={`/certification/${cert.id}`} key={cert.id} className="block group">
+              <a 
+                href={cert.pdf} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                key={cert.id} 
+                className="block group"
+              >
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -59,7 +64,7 @@ const Certifications = () => {
                     <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
                   </Card>
                 </motion.div>
-              </Link>
+              </a>
             );
           })}
         </div>

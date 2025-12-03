@@ -9,7 +9,6 @@ import Services from './components/sections/Services';
 import Projects from './components/sections/Projects';
 import Experience from './components/sections/Experience';
 import Contact from './components/sections/Contact';
-import CertificationViewer from './components/pages/CertificationViewer';
 
 const HomePage = () => (
   <Layout>
@@ -29,7 +28,6 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/certification/:id" element={<CertificationViewer />} />
       </Routes>
     </Router>
   );
