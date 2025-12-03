@@ -3,10 +3,10 @@ import { Code, Server, Database, Cloud, Shield, Terminal, Layout, Smartphone } f
 import LandMgmtLogo from '../assets/Logos/logo1.png';
 
 // Import Certification PDFs
-import AWSSolutionsArchitect from '../assets/Pdfs/AWS Certified Solutions Architect - Associate.pdf';
-import AWSSecurity from '../assets/Pdfs/AWS Certified Security - Specialty.pdf';
-import CCNA from '../assets/Pdfs/Cisco Certified Network Associate certificate.pdf';
-import SecurityPlus from '../assets/Pdfs/CompTIA Security+ ce certificate.pdf';
+import AWSSolutionsArchitect from '../assets/Pdfs/aws-certified-solutions-architect-associate.pdf';
+import AWSSecurity from '../assets/Pdfs/aws-certified-security-specialty.pdf';
+import CCNA from '../assets/Pdfs/cisco-certified-network-associate.pdf';
+import SecurityPlus from '../assets/Pdfs/comptia-security-plus.pdf';
 
 export const personalInfo = {
   name: "CHEUSSOPKENG MIAFO ARNAULD PARFAIT",
