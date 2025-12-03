@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 import { Menu, X, Code } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 // Import the CV PDF from assets
-import Mycv from '../../assets/Pdfs/Mycv.pdf';
+// CV is now served statically from public/pdfs
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,7 +50,7 @@ const Navbar = () => {
             </Link>
           ))}
           <a 
-            href={Mycv} 
+            href="/pdfs/Mycv.pdf" 
             download="CV_Miafo.pdf"
             target="_blank" 
             rel="noopener noreferrer"
@@ -93,7 +93,7 @@ const Navbar = () => {
                 </Link>
               ))}
               <a 
-                href={Mycv} 
+                href="/pdfs/Mycv.pdf" 
                 download="CV_Miafo.pdf"
                 target="_blank" 
                 rel="noopener noreferrer"

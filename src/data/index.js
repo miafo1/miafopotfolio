@@ -3,10 +3,7 @@ import { Code, Server, Database, Cloud, Shield, Terminal, Layout, Smartphone } f
 import LandMgmtLogo from '../assets/Logos/logo1.png';
 
 // Import Certification PDFs
-import AWSSolutionsArchitect from '../assets/Pdfs/aws-certified-solutions-architect-associate.pdf';
-import AWSSecurity from '../assets/Pdfs/aws-certified-security-specialty.pdf';
-import CCNA from '../assets/Pdfs/cisco-certified-network-associate.pdf';
-import SecurityPlus from '../assets/Pdfs/comptia-security-plus.pdf';
+// PDFs are now served statically from public/pdfs
 
 export const personalInfo = {
   name: "CHEUSSOPKENG MIAFO ARNAULD PARFAIT",
@@ -24,51 +21,51 @@ export const certifications = [
     id: "aws-sa",
     name: "AWS Certified Solutions Architect – Associate",
     issuer: "Amazon Web Services",
-    pdf: AWSSolutionsArchitect,
+    pdf: "/pdfs/aws-certified-solutions-architect-associate.pdf",
     icon: Cloud
   },
   {
     id: "aws-sec",
     name: "AWS Certified Security – Specialty",
     issuer: "Amazon Web Services",
-    pdf: AWSSecurity,
+    pdf: "/pdfs/aws-certified-security-specialty.pdf",
     icon: Shield
   },
   {
     id: "ccna",
     name: "Cisco Certified Network Associate (CCNA)",
     issuer: "Cisco",
-    pdf: CCNA,
+    pdf: "/pdfs/cisco-certified-network-associate.pdf",
     icon: Terminal
   },
   {
     id: "sec-plus",
     name: "CompTIA Security+",
     issuer: "CompTIA",
-    pdf: SecurityPlus,
+    pdf: "/pdfs/comptia-security-plus.pdf",
     icon: Shield
   }
 ];
 
 export const skills = {
   programming: [
-    { name: "Python (Django)", level: 90 },
+    { name: "Python (Django)", level: 70 },
     { name: "Java", level: 85 },
-    { name: "JavaScript (React)", level: 85 },
-    { name: "HTML/CSS/Tailwind", level: 90 },
+    { name: "JavaScript (React)", level: 70 },
+    { name: "HTML/CSS/Tailwind", level: 70 },
     { name: "PHP", level: 80 },
   ],
   cloudSecurity: [
-    { name: "AWS Solutions Architect", level: 90 },
+    { name: "AWS Solutions Architect", level: 80 },
     { name: "AWS Security", level: 85 },
-    { name: "CCNA", level: 80 },
-    { name: "Security+", level: 80 },
+    { name: "CCNA", level: 85 },
+    { name: "Security+", level: 70 },
     { name: "IAM, VPC, S3, EC2", level: 90 },
   ],
   other: [
-    { name: "PostgreSQL/MySQL", level: 85 },
+    { name: "PostgreSQL/MySQL", level: 70 },
     { name: "UML/2TUP", level: 85 },
-    { name: "Git & Linux", level: 90 },
+    { name: "Git & Linux", level: 80 },
     { name: "Docker", level: 75 },
   ]
 };
@@ -111,7 +108,8 @@ export const projects = [
     title: "Fast-Eat",
     description: "Food-delivery platform built with React, Django, and PostgreSQL. Implemented REST APIs, ordering workflows, and database models.",
     tags: ["React", "Django", "PostgreSQL", "REST API"],
-    image: "fast-eat.jpg", // Placeholder
+    image: "fast-eat.jpg",
+     // Placeholder
     link: "#"
   },
   {
