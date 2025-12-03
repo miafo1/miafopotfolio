@@ -56,11 +56,11 @@ export const skills = {
     { name: "PHP", level: 80},
   ],
   cloudSecurity: [
-    { name: "AWS Solutions Architect", level: 75 },
-    { name: "AWS Security", level: 70 },
-    { name: "CCNA", level: 70 },
-    { name: "Security+", level: 70 },
-    { name: "IAM, VPC, S3, EC2", level: 85 },
+    { name: "AWS Solutions Architect", level: 90 },
+    { name: "AWS Security", level: 90 },
+    { name: "CCNA", level: 90 },
+    { name: "Security+", level: 90 },
+    { name: "IAM, VPC, S3, EC2", level: 90 },
   ],
   other: [
     { name: "PostgreSQL/MySQL", level: 70 },
