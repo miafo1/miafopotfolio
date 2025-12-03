@@ -50,23 +50,23 @@ export const certifications = [
 export const skills = {
   programming: [
     { name: "Python (Django)", level: 70 },
-    { name: "Java", level: 85 },
+    { name: "Java", level: 70 },
     { name: "JavaScript (React)", level: 70 },
     { name: "HTML/CSS/Tailwind", level: 70 },
-    { name: "PHP", level: 80 },
+    { name: "PHP", level: 80},
   ],
   cloudSecurity: [
-    { name: "AWS Solutions Architect", level: 80 },
-    { name: "AWS Security", level: 85 },
-    { name: "CCNA", level: 85 },
+    { name: "AWS Solutions Architect", level: 75 },
+    { name: "AWS Security", level: 70 },
+    { name: "CCNA", level: 70 },
     { name: "Security+", level: 70 },
-    { name: "IAM, VPC, S3, EC2", level: 90 },
+    { name: "IAM, VPC, S3, EC2", level: 85 },
   ],
   other: [
     { name: "PostgreSQL/MySQL", level: 70 },
     { name: "UML/2TUP", level: 85 },
-    { name: "Git & Linux", level: 80 },
-    { name: "Docker", level: 75 },
+    { name: "Git & Linux", level: 70},
+    { name: "Docker", level: 70},
   ]
 };
 
