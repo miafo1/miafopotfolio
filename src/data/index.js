@@ -10,7 +10,7 @@ export const personalInfo = {
   title: "Software Engineer | AWS Cloud Engineer",
   bio: "I am a dedicated Software Engineer and AWS Cloud Engineer with over two years of hands-on experience in backend development, cloud technologies, and secure system design. I specialize in building scalable web applications using Python (Django), Java, React, and modern API-driven architectures. Certified in AWS Solutions Architect – Associate, AWS Security – Specialty, CCNA, and Security+. Passionate about solving real-world problems and building reliable digital solutions, I continuously strive to improve my skills. Perfectly bilingual with an advanced level in both French and English.",
   email: "miafoarnauld@gmail.com",
-  phone: "+237 671 383 867",
+  phone: "+237 671 343 867",
   location: "Yaoundé, Cameroon",
   github: "https://github.com/miafo1",
   linkedin: "https://www.linkedin.com/in/miafo-arnauld-aaa7142a8",
