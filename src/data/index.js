@@ -136,7 +136,7 @@ export const projects = [
     title: "Secure CI/CD Pipeline (DevSecOps)",
     description: "A production-grade, end-to-end CI/CD pipeline implementation demonstrating DevSecOps best practices. This project automates the build, security scanning, and deployment of a Python Django application to AWS Elastic Container Registry (ECR).",
     tags: ["Flake8", "Hadolint", "Bootstrap", "AWS IAM", "Docker", "Terraform", "AWS ECR", "HCL $ shell", "Python ", "GitHub Actions"],
-    image: LandMgmtLog,
+    image: LandMgmtLogo,
     link: "https://github.com/miafo1/secure-ci-cd-pipeline"
   },
   {
