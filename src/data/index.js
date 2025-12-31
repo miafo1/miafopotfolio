@@ -175,7 +175,7 @@ export const experience = [
     company: "Univers Binaire",
     period: "2024 – Present",
     description: "Full-stack development, API integration, microservices, and intern training.",
-    technologies: ["HTML", "CSS", "Tailwind", "JS", "PHP", "PWA", "AWS", "Docker", "K8", "Python", "Java", "PostgreSQL", "Terraform", "Prometheus", "Grafana" "..."]
+    technologies: ["HTML", "CSS", "Tailwind", "JS", "PHP", "PWA", "AWS", "Docker", "K8", "Python", "Java", "PostgreSQL", "Terraform", "Prometheus", "Grafana", "..."]
   },
   {
     role: "Part-Time Developer",
