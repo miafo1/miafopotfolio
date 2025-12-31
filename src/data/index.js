@@ -105,33 +105,54 @@ export const services = [
 
 export const projects = [
   {
-    title: "Fast-Eat",
+    title: "Food Delivery DevOps Project",
     description: "Food-delivery platform built with React, Django, and PostgreSQL. Implemented REST APIs, ordering workflows, and database models.",
-    tags: ["React", "Django", "PostgreSQL", "REST API"],
+    tags: ["React", "Django", "PostgreSQL", "REST API","DynamoDB", "Redis (ElastiCache)", "AWS (VPC, ALB, ECS, S3, CloudFront)", "Docker", "Terraform"],
     image: "fast-eat.jpg",
      // Placeholder
-    link: "#"
+    link: "https://github.com/miafo1/devops-projects"
   },
   {
-    title: "Vider-Grenier",
-    description: "Agricultural marketplace for buying and selling produce. Features user profiles, product listings, and search.",
-    tags: ["React", "Django", "PostgreSQL"],
+    title: "Multi-Cloud GitOps Pipeline",
+    description: "A production-grade GitOps pipeline demonstrating modern DevOps practices for deploying microservices to Kubernetes.",
+    tags: ["Terraform", "GitHub Actions", "ArgoCD", "AWS EKS", "Python/Flask", "Terraform Modules/Simulated Azure AKS & GCP GKE", "shell", "hcl"],
     image: "vider-grenier.jpg", // Placeholder
-    link: "#"
+    link: "https://github.com/miafo1/gitops-multicloud-pipeline"
+  },
+  {
+    title: "Secure CI/CD Pipeline (DevSecOps)",
+    description: "A production-grade, end-to-end CI/CD pipeline implementation demonstrating DevSecOps best practices. This project automates the build, security scanning, and deployment of a Python Django application to AWS Elastic Container Registry (ECR).",
+    tags: ["Flake8", "Hadolint", "Bootstrap", "AWS IAM", "Docker", "Terraform", "AWS ECR", "HCL $ shell", "Python ", "GitHub Actions"],
+    image: LandMgmtLog1,
+    link: "https://github.com/miafo1/secure-ci-cd-pipeline"
+  },
+  {
+    title: "Kubernetes Auto-Scaling Production Cluster (AWS - K3s)",
+    description: "This project provisions a production-grade Kubernetes cluster using K3s on AWS EC2, implementing full auto-scaling capabilities (HPA + Cluster Autoscaler) and observability (Prometheus/Grafana).",
+    tags: ["AWS EC2", "HPA + Cluster Autoscaler", "Prometheus", "Grafana", "Python", "JavaScript", "Shell & HCL", "Docker", "Terraform", "K8s" "AWS(ASM)", "ASG"],
+    image: LandMgmtLogo2,
+    link: "https://github.com/miafo1/kubernetes-autoscaling-production-cluster"
   },
   {
     title: "Land Management App",
-    description: "Comprehensive land management system handling plots, owners, and transactions.",
+    description: "This project aims to develop an innovative and comprehensive online platform, named EASY-TOPO, to address the multifaceted challenges that individuals encounter when engaging in land buying, searching, and measuring activities.",
     tags: ["PHP", "MySQL", "Bootstrap"],
     image: LandMgmtLogo,
-    link: "#"
+    link: "https://github.com/miafo1/easy-topo"
+  },
+  {
+    title: "Zero-Downtime Blue-Green Deployment System",
+    description: "This project demonstrates a production-grade Blue-Green deployment strategy using Docker Compose and NGINX.",
+    tags: ["Docker", "NGINX", "PostgreSQL", "CI/CD", "Python", "Dockerfile", "..."],
+    image: LandMgmtLogo3,
+    link: "https://github.com/miafo1/Zero-Downtime-Blue-Green-Deployment"
   },
   {
     title: "Cocoa Marketplace App",
     description: "Platform for cocoa trading, connecting farmers with buyers.",
     tags: ["PHP", "MySQL", "UML"],
     image: "cocoa.jpg", // Placeholder
-    link: "#"
+    link: "https://github.com/miafo1/Cocoa-selling-buying-app"
   }
 ];
 
@@ -141,7 +162,7 @@ export const experience = [
     company: "Univers Binaire",
     period: "2024 – Present",
     description: "Full-stack development, API integration, microservices, and intern training.",
-    technologies: ["HTML", "CSS", "Tailwind", "JS", "PHP", "PWA"]
+    technologies: ["HTML", "CSS", "Tailwind", "JS", "PHP", "PWA", "AWS", "Docker", "K8", "Python", "Java", "PostgreSQL", "Terraform", "Prometheus", "Grafana" "..."]
   },
   {
     role: "Part-Time Developer",
@@ -169,7 +190,7 @@ export const experience = [
 export const education = [
   {
     degree: "Bachelor of Technology in Software Engineering",
-    school: "University of Bamenda",
+    school: "IAI-Cameroon",
     period: "2020 – 2024",
     description: "Focus on software architecture, algorithms, and system design."
   }
