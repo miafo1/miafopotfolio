@@ -8,7 +8,7 @@ import LandMgmtLogo from '../assets/Logos/logo1.png';
 export const personalInfo = {
   name: "CHEUSSOPKENG MIAFO ARNAULD PARFAIT",
   title: "Software Engineer | AWS Cloud Engineer",
-  bio: "I am a dedicated Software Engineer and AWS Cloud Engineer with over two years of hands-on experience in backend development, cloud technologies, and secure system design. I specialize in building scalable web applications using Python (Django), Java, React, and modern API-driven architectures. Certified in AWS Solutions Architect – Associate, AWS Security – Specialty, CCNA, and Security+. Passionate about solving real-world problems and building reliable digital solutions, I continuously strive to improve my skills. Perfectly bilingual with an advanced level in both French and English.",
+  bio: "I am a dedicated Software Engineer and AWS Cloud Engineer with more than two years of hands-on experience in backend development, cloud technologies, and secure system design. I specialize in building scalable web applications using Python (Django), Java, React, and modern API-driven architectures. Certified in AWS Solutions Architect – Associate, AWS Security – Specialty, CCNA, and Security+. Passionate about solving real-world problems and building reliable digital solutions, I continuously strive to improve my skills. Perfectly bilingual with an advanced level in both French and English.",
   email: "miafoarnauld@gmail.com",
   phone: "+237 671 343 867",
   location: "Yaoundé, Cameroon",
@@ -49,17 +49,18 @@ export const certifications = [
 
 export const skills = {
   programming: [
-    { name: "Python (Django)", level: 70 },
+    { name: "Python", level: 70 },
     { name: "Java", level: 70 },
-    { name: "JavaScript (React)", level: 70 },
+    { name: "JavaScript ", level: 70 },
     { name: "HTML/CSS/Tailwind", level: 70 },
     { name: "PHP", level: 80},
   ],
   cloudSecurity: [
-    { name: "AWS Solutions Architect", level: 90 },
-    { name: "AWS Security", level: 90 },
+    { name: "AWS Solutions Architect", level: 89 },
+    { name: "AWS Security", level: 88 },
     { name: "CCNA", level: 90 },
     { name: "Security+", level: 90 },
+    { name: "Azure", level: 67},
     { name: "IAM, VPC, S3, EC2", level: 90 },
   ],
   other: [
@@ -67,23 +68,35 @@ export const skills = {
     { name: "UML/2TUP", level: 85 },
     { name: "Git & Linux", level: 70},
     { name: "Docker", level: 70},
+    { name: "Jenkins", level: 68},
+    { name: "Github/git", level: 80},
+    { name: "Shell", level: 70},
+    { name: "Terraform", level: 80},
+    { name: "Ansible", level: 80},
+    { name: "Kubernetes", level: 65},
+    { name: "Graphana", level: 65},
+    { name: "Prometheus", level: 65},
+    { name: "Boto3", level: 75},
+    { name: "Lambda", level: 70},
+    { name: "Multistage Build", level: 68},
+    { name: "pods", level: 70},
   ]
 };
 
 export const services = [
   {
     title: "Backend Development",
-    description: "Robust backend systems using Django, PHP, and Java.",
+    description: "Robust backend systems using Django, PHP,Js, and Java.",
     icon: Server
   },
   {
     title: "Full-Stack Development",
-    description: "End-to-end web application development with React and modern frameworks.",
+    description: "End-to-end web application development with React, python, java, HTML and modern frameworks.",
     icon: Layout
   },
   {
-    title: "Cloud Architecture",
-    description: "Scalable and secure cloud infrastructure design on AWS.",
+    title: "Cloud Architecture & DevOps",
+    description: "Scalable and secure cloud infrastructure design on AWS and Azure.",
     icon: Cloud
   },
   {
