@@ -142,7 +142,7 @@ export const projects = [
   {
     title: "Kubernetes Auto-Scaling Production Cluster (AWS - K3s)",
     description: "This project provisions a production-grade Kubernetes cluster using K3s on AWS EC2, implementing full auto-scaling capabilities (HPA + Cluster Autoscaler) and observability (Prometheus/Grafana).",
-    tags: ["AWS EC2", "HPA + Cluster Autoscaler", "Prometheus", "Grafana", "Python", "JavaScript", "Shell & HCL", "Docker", "Terraform", "K8s" "AWS(ASM)", "ASG"],
+    tags: ["AWS EC2", "HPA + Cluster Autoscaler", "Prometheus", "Grafana", "Python", "JavaScript", "Shell & HCL", "Docker", "Terraform", "K8s", "AWS(ASM)", "ASG"],
     image: LandMgmtLogo2,
     link: "https://github.com/miafo1/kubernetes-autoscaling-production-cluster"
   },
