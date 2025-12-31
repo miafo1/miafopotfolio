@@ -136,14 +136,14 @@ export const projects = [
     title: "Secure CI/CD Pipeline (DevSecOps)",
     description: "A production-grade, end-to-end CI/CD pipeline implementation demonstrating DevSecOps best practices. This project automates the build, security scanning, and deployment of a Python Django application to AWS Elastic Container Registry (ECR).",
     tags: ["Flake8", "Hadolint", "Bootstrap", "AWS IAM", "Docker", "Terraform", "AWS ECR", "HCL $ shell", "Python ", "GitHub Actions"],
-    image: LandMgmtLog1,
+    image: LandMgmtLog,
     link: "https://github.com/miafo1/secure-ci-cd-pipeline"
   },
   {
     title: "Kubernetes Auto-Scaling Production Cluster (AWS - K3s)",
     description: "This project provisions a production-grade Kubernetes cluster using K3s on AWS EC2, implementing full auto-scaling capabilities (HPA + Cluster Autoscaler) and observability (Prometheus/Grafana).",
     tags: ["AWS EC2", "HPA + Cluster Autoscaler", "Prometheus", "Grafana", "Python", "JavaScript", "Shell & HCL", "Docker", "Terraform", "K8s", "AWS(ASM)", "ASG"],
-    image: LandMgmtLogo2,
+    image: LandMgmtLogo,
     link: "https://github.com/miafo1/kubernetes-autoscaling-production-cluster"
   },
   {
@@ -157,7 +157,7 @@ export const projects = [
     title: "Zero-Downtime Blue-Green Deployment System",
     description: "This project demonstrates a production-grade Blue-Green deployment strategy using Docker Compose and NGINX.",
     tags: ["Docker", "NGINX", "PostgreSQL", "CI/CD", "Python", "Dockerfile", "..."],
-    image: LandMgmtLogo3,
+    image: LandMgmtLogo,
     link: "https://github.com/miafo1/Zero-Downtime-Blue-Green-Deployment"
   },
   {
