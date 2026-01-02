@@ -54,6 +54,9 @@ export const skills = {
     { name: "JavaScript ", level: 70 },
     { name: "HTML/CSS/Tailwind", level: 70 },
     { name: "PHP", level: 80},
+    { name: "ReactJs", level: 70 },
+    { name: "Django", level: 70 },
+    { name: "VeuJS", level: 70 },
   ],
   cloudSecurity: [
     { name: "AWS Solutions Architect", level: 89 },
