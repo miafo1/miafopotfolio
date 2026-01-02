@@ -65,6 +65,7 @@ export const skills = {
   ],
   other: [
     { name: "PostgreSQL/MySQL", level: 70 },
+    { name: "MongoDB", level: 70 },
     { name: "UML/2TUP", level: 85 },
     { name: "Git & Linux", level: 70},
     { name: "Docker", level: 70},
@@ -80,6 +81,14 @@ export const skills = {
     { name: "Lambda", level: 70},
     { name: "Multistage Build", level: 68},
     { name: "pods", level: 70},
+    { name: "HCL", level: 75},
+    { name: "PWA", level: 72},
+    { name: "Microsoft Excel/PowerPoint/World", level: 70},
+    { name: "Power BI", level: 65},
+    { name: "Tableau", level: 65},
+    { name: "Matplotlib/Seaborn", level: 65 },
+    { name: "Looker", level: 65},
+    { name: "SAS", level: 65},
   ]
 };
 
