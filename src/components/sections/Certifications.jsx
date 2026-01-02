@@ -9,7 +9,7 @@ const Certifications = () => {
   return (
     <section id="certifications" className="py-20 bg-slate-50">
       <div className="container mx-auto px-6">
-        <SectionTitle title="Certifications" subtitle="Verified expertise and credentials" />
+        <SectionTitle title="View Certifications" subtitle="Verified expertise and credentials" />
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {certifications.map((cert, index) => {
