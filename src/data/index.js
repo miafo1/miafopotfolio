@@ -19,28 +19,28 @@ export const personalInfo = {
 export const certifications = [
   {
     id: "aws-sa",
-    name: "AWS Certified Solutions Architect – Associate 👇",
+    name: "AWS Certified Solutions Architect – Associate 🙂(Click)👇",
     issuer: "Amazon Web Services",
     pdf: "/pdfs/aws-certified-solutions-architect-associate.pdf",
     icon: Cloud
   },
   {
     id: "aws-sec",
-    name: "AWS Certified Security – Specialty 👇",
+    name: "AWS Certified Security – Specialty 🙂(Click)👇",
     issuer: "Amazon Web Services",
     pdf: "/pdfs/aws-certified-security-specialty.pdf",
     icon: Shield
   },
   {
     id: "ccna",
-    name: "Cisco Certified Network Associate (CCNA) 👇",
+    name: "Cisco Certified Network Associate (CCNA) 🙂(Click)👇",
     issuer: "Cisco",
     pdf: "/pdfs/cisco-certified-network-associate.pdf",
     icon: Terminal
   },
   {
     id: "sec-plus",
-    name: "CompTIA Security+ 👇",
+    name: "CompTIA Security+ 🙂(Click)👇",
     issuer: "CompTIA",
     pdf: "/pdfs/comptia-security-plus.pdf",
     icon: Shield
